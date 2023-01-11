@@ -15,5 +15,5 @@ jobs:
       # if: github.event.pull_request.merged == true
       run: |
         echo "github.event.pull_request.merged: ${{ github.event.pull_request.merged }}"
-        echo "github.event.pull_request.ref: ${{ github.event.pull_request.ref }}"
+        echo "github.event.pull_request.head.ref: ${{ github.event.pull_request.head.ref }}"
         echo "GITHUB_HEAD_REF: $GITHUB_HEAD_REF"
